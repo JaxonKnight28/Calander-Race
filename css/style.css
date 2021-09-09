@@ -1,0 +1,78 @@
+body {
+  background-color: #dadfea;
+  display: flex;
+  justify-content: center;
+}
+
+.calender {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 80%;
+  height: auto;
+  margin: 50px;
+  border-radius: 15px;
+}
+.calender .topBar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  margin: 20px;
+}
+.calender .topBar div {
+  font-size: 20px;
+}
+.calender .topBar .right, .calender .topBar .left {
+  font-size: 20px;
+}
+
+i {
+  padding-left: 10px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px;
+}
+.content .day {
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  border: 1px gray solid;
+  border-radius: 5px;
+  width: 135px;
+  height: 135px;
+  padding: 5px;
+  margin: 2px;
+}
+.content .day .num {
+  font-weight: bolder;
+}
+.content .day .weekD {
+  color: #a3a3a3;
+}
+
+.orangeE, .redE, .blueE {
+  align-self: center;
+  height: auto;
+  width: 130px;
+  border-radius: 5px;
+}
+
+.blueE {
+  background-color: lightblue;
+}
+
+.redE {
+  background-color: #f3a0a0;
+}
+
+.orangeE {
+  background-color: #fab59a;
+}
+
+/*# sourceMappingURL=style.css.map */

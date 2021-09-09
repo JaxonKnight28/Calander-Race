@@ -1,0 +1,89 @@
+
+$backgroundColor: #dadfea;
+$calanderMargin: 50px;
+$corners: 15px;
+$font:'Roboto', sans-serif;
+$fullWidth: 100%;
+$topPadding: 20px;
+$boxSize: 135px;
+$dayPad: 5px;
+
+body {
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: center;
+}
+
+.calender {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 80%;
+    height: auto;
+    margin: $calanderMargin;
+    border-radius: $corners;
+    .topBar {
+        display: flex;
+        justify-content: space-between;
+        font-family: $font;
+        width: auto;
+        margin: $topPadding;
+        div {
+            font-size: 20px;
+        }
+        .right, .left {
+            font-size: 20px;
+        }
+    }
+}
+
+i {
+    padding-left: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: $fullWidth;
+    margin: 20px;
+    .day {
+        font-family: $font;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        border: 1px gray solid;
+        border-radius: 5px;
+        width: $boxSize;
+        height: $boxSize;
+        padding: $dayPad;
+        margin: 2px;
+        .num {
+            font-weight: bolder;
+        }
+        .weekD {
+            color: #a3a3a3;
+        }
+    }
+}
+
+%event {
+    align-self: center;
+    height: auto;
+    width: 130px;
+    border-radius: 5px;
+}
+
+
+.blueE {
+    @extend %event;
+    background-color: lightblue;
+}
+.redE {
+    @extend %event;
+    background-color: rgb(243, 160, 160);
+}
+
+.orangeE {
+    @extend %event;
+    background-color: rgb(250, 181, 154);
+}
